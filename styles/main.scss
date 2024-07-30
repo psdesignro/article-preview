@@ -1,0 +1,29 @@
+@import "resetter";
+
+//global settings
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//typography
+
+.card {
+  max-width: 730px;
+  max-height: 280px;
+  display: flex;
+  background-color: #fff;
+
+  .text-container{
+    flex-direction: column;
+    padding: 32px 40px;
+  }
+}
