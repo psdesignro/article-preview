@@ -145,6 +145,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px 0 0 10px;
 }
 
 .share-box {
@@ -179,4 +180,43 @@ section {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #48556a;
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 20px;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .card .text-container {
+    gap: 32px;
+    padding: 36px 32px 20px 32px;
+  }
+  .card .featured {
+    width: auto;
+  }
+  .card .featured img {
+    border-radius: 0;
+  }
+  .share-box {
+    display: inline-block;
+    position: absolute;
+    background-color: #48556a;
+    border-radius: 0;
+    padding: 18px 36px;
+    width: auto;
+    height: 64px;
+    bottom: 0px;
+    top: auto;
+    left: 0;
+  }
+  .share-box .share-modal {
+    justify-content: flex-start;
+  }
+  .modal-arrow {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
